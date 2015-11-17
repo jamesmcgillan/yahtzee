@@ -1,6 +1,9 @@
 object Sum {
 
-    fun calculate(dice: List<Int>) =
-            dice.reduce { a, b -> a+ b}
+    fun calculate(nums: List<Int>) =
+        if (nums.isEmpty())
+            0
+        else
+            nums.reduce { a, b -> a + b}
 
 }

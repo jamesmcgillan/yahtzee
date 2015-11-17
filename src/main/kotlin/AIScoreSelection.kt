@@ -2,7 +2,7 @@ object AIScoreSelection {
 
     // First pass :)
 
-    fun select(availableScores: Map<String, Int>) =
+    fun apply(availableScores: Map<String, Int>) =
 
         availableScores
             .toList()
