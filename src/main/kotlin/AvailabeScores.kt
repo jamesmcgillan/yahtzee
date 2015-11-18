@@ -6,7 +6,7 @@ object AvailabeScores {
 
         val freeFields =
             scoreSheet.fields
-                .filter { field -> field.value != null }
+                .filter { field -> field.value == null }
 
         val fromUpperSection =
             upperSection.fields

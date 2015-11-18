@@ -1,3 +1,11 @@
-/**
- * Created by seb on 11/17/15.
- */
+object AddSelectedScore {
+
+    fun apply(scoreSheet: ScoreSheet, selectedField: Pair<String, Int>): ScoreSheet {
+
+        scoreSheet.fields.put(selectedField.first, selectedField.second)
+
+        return scoreSheet
+
+    }
+
+}
